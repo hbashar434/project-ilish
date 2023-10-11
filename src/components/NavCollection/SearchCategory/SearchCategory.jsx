@@ -16,14 +16,14 @@ const SearchCategory = () => {
   const [selected, setSelected] = useState(people[0]);
 
   return (
-    <div className="absolute inset-y-0 left-0 lg:w-40">
+    <div className="absolute inset-y-0 left-0 md:w-36 lg:w-40">
       <Listbox value={selected} onChange={setSelected}>
         <div className="">
-          <Listbox.Button className="relative w-full cursor-pointer rounded-full bg-white py-[10px] pl-8 text-left focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
+          <Listbox.Button className="relative w-full cursor-pointer my-bg-secondary rounded-s-full py-[10px] md:pl-4 lg:pl-8 text-left text-sm my-text-primary">
             <span className="">{selected.name}</span>
             <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4">
               <HiChevronUpDown
-                className="h-5 w-5 text-gray-400"
+                className="h-5 w-5 my-text-primary"
                 aria-hidden="true"
               />
             </span>
@@ -39,8 +39,8 @@ const SearchCategory = () => {
                 <Listbox.Option
                   key={personIdx}
                   className={({ active }) =>
-                    `relative cursor-default select-none py-2 pl-10 pr-4 ${
-                      active ? "bg-amber-100 text-amber-900" : "text-gray-900"
+                    `relative cursor-default select-none py-2 pl-6 lg:pl-10 pr-4 ${
+                      active ? "bg-emerald-100 text-emerald-900" : "text-gray-900"
                     }`
                   }
                   value={person}
@@ -55,7 +55,7 @@ const SearchCategory = () => {
                         {person.name}
                       </span>
                       {selected ? (
-                        <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600">
+                        <span className="absolute inset-y-0 left-0 flex items-center pl-1 lg:pl-3 text-emerald-600">
                           <BiCheck className="h-5 w-5" aria-hidden="true" />
                         </span>
                       ) : null}
