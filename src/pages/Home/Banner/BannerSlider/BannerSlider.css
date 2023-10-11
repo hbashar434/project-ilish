@@ -1,5 +1,5 @@
 .splide__arrow {
-    background-color: #04ce78;
+    background-color: #ffffff;
     width: 3em;
     height: 3em;
 }
@@ -7,6 +7,15 @@
 /* .splide__arrow--next {
     right: 1em;
 } */
+
+.text-mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 
 /* ---------- media queries */
 

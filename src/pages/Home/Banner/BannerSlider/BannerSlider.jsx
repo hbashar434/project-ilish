@@ -13,7 +13,7 @@ const BannerSlider = () => {
         gap: '1rem',
         focus: 'center',
         // autoWidth: true,
-        autoplay: true,
+        autoplay: false,
         pauseOnHover: false,
         resetProgress: true,
         // lazyLoad: 'nearby',
@@ -38,6 +38,16 @@ const BannerSlider = () => {
                             src={bannerImage1}
                             className='object-cover w-full'
                             alt="bannerImage1" />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                            <div
+                                className="bg-black rounded bg-opacity-50 text-white text-xs lg:text-xl p-4"
+                                style={{ width: "70%" }}
+                            >
+                                <h2>This is a headline</h2>
+                                <p>This is a paragraph</p>
+                                <button>Shop Now</button>
+                            </div>
+                        </div>
                     </SplideSlide>
                     <SplideSlide>
                         <img
