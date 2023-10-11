@@ -7,17 +7,9 @@ export default {
         "my-sans": ["Suisse", "sans"],
         "my-serif": ["Zapf Humanist", "serif"],
       },
-      backgroundColor: {
-        "my-primary": "#04ce78",
-        "my-secondary": "#005B41",
-      },
-      textColor: {
-        "my-primary": "#187776",
-        "my-secondary": "#F3FDE8",
-      },
-      darkMode: "class",
     },
   },
+  darkMode: "class",
 
   plugins: [],
 };
