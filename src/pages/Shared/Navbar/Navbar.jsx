@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="my-bg-primary p-4 w-full fixed z-10 ">
+    <nav className="my-bg-primary p-4 w-full fixed z-10">
       <div className="max-w-[1440] mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-4">
           <button
