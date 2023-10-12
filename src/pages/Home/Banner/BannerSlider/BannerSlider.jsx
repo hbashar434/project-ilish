@@ -31,7 +31,7 @@ const BannerSlider = () => {
             <Splide hasTrack={false}
                 options={options}
                 aria-label="My Favorite Images"
-                className='splide grid justify-items-center py-4 lg:py-8'
+                className='splide grid justify-center items-center py-4 lg:py-8'
                 data-splide-interval="1000"
             >
                 <SplideTrack >
