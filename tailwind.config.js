@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "my-sans": ["Suisse", "sans"],
-        "my-serif": ["Zapf Humanist", "serif"],
+        "my-sans": ["Open Sans", "sans"],
+        "my-serif": ["Libre Baskerville", "serif"],
       },
     },
   },
