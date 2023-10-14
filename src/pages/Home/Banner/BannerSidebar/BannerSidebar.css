@@ -1,0 +1,12 @@
+.sidebar-headline-text {
+    @apply font-bold text-3xl md:text-2xl lg:text-3xl xl:text-4xl font-my-serif;
+}
+
+.sidebar-paragraph-text {
+    @apply font-semibold text-sm lg:text-base xl:text-lg font-my-sans;
+}
+
+
+.sidebar-banner-button {
+    @apply font-my-sans font-semibold px-4 py-2 lg:px-8 lg:py-3 mt-2 lg:mt-4 text-sm md:text-lg rounded-md hover:bg-[#187776] bg-[#5EC38B];
+}
