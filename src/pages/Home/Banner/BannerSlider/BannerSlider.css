@@ -16,6 +16,23 @@
     color: white;
 }
 
+.banner-gradient {
+    background-image: conic-gradient(at right bottom, rgba(55, 65, 81, .05), rgba(17, 24, 39, .05), rgba(0, 0, 0, .1));
+}
+
+.headline-text {
+    @apply font-bold text-3xl md:text-2xl lg:text-3xl xl:text-5xl font-my-serif;
+}
+
+.paragraph-text {
+    @apply font-semibold text-sm lg:text-base xl:text-xl font-my-sans;
+}
+
+
+.banner-button {
+    @apply font-my-sans font-semibold px-4 py-2 lg:px-8 lg:py-3 lg:m-2 text-sm md:text-lg rounded-md hover:bg-[#187776] bg-[#5EC38B];
+}
+
 
 /* ---------- media queries */
 
