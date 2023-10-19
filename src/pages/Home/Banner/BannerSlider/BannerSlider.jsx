@@ -20,8 +20,6 @@ const BannerSlider = () => {
         resetProgress: true,
         // lazyLoad: 'nearby',
         rewind: true,
-
-
     };
 
     // new Splide('.splide').mount();
