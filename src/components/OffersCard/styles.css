@@ -1,0 +1,7 @@
+.img-box:hover .offers-img {
+  top: 0;
+}
+
+.offers-img {
+  transition: 1s all;
+}
