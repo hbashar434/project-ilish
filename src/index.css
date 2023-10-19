@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .my-text-primary {
-  @apply text-white dark:text-[#F3FDE8] font-my-sans;
+  @apply text-white dark:text-[#F3FDE8] font-my-serif;
 }
 
 .my-text-secondary {
-  @apply text-[#187776] dark:text-gray-300 font-my-serif;
+  @apply text-[#187776] dark:text-gray-300 font-my-sans;
 }
 
 .my-text-gradient {
@@ -33,6 +33,7 @@
 .my-btn {
   @apply text-white py-2 px-4 rounded font-semibold bg-gradient-to-r from-emerald-600 to-green-600 hover:from-indigo-600 hover:to-fuchsia-500;
 }
+
 .my-disabled-btn {
   @apply text-gray-400 py-2 px-2 md:px-4 rounded font-semibold bg-gray-200;
 }
