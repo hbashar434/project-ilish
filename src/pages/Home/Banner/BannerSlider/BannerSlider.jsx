@@ -4,6 +4,9 @@ import '@splidejs/splide/css'
 import bannerImage1 from "../../../../assets/BannerImages/Slider/HilsaFish.jpg"
 import bannerImage2 from "../../../../assets/BannerImages/Slider/Fishing.jpg"
 import bannerImage3 from "../../../../assets/BannerImages/Slider/HilsaFish2.jpg"
+
+
+
 import "./BannerSlider.css"
 
 const BannerSlider = () => {
@@ -25,6 +28,14 @@ const BannerSlider = () => {
     // new Splide('.splide').mount();
 
     return (
+
+
+
+
+
+ <div>
+
+
         <section>
             <Splide hasTrack={false}
                 options={options}
@@ -68,6 +79,16 @@ const BannerSlider = () => {
             </Splide>
 
         </section>
+
+        </div>
+ 
+
+
+
+
+
+
+
     );
 };
 
