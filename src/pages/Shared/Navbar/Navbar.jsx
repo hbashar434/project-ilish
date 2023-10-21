@@ -32,7 +32,7 @@ const Navbar = () => {
           </button>
           <Link
             to="/"
-            className="text-white text-lg md:text-xl lg:text-3xl font-semibold"
+            className="text-white text-lg md:text-xl lg:text-3xl font-semibold font-my-serif"
           >
             ilisherBari
           </Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
               <FaSignOutAlt className="text-xl" />
             </button>
           ) : (
-            <Link to="/" className="my-text-primary flex items-center gap-2">
+            <Link to="/" className="my-text-secondary flex items-center gap-2">
               <FaSignInAlt className="text-xl" />
               Sign In
             </Link>
@@ -63,7 +63,7 @@ const Navbar = () => {
         </div>
       </div>
       <p className="my-4 hidden border-b-[.1rem] md:block border-gray-300 dark:border-gray-500" />
-      <div className=" hidden md:block">
+      <div className="hidden md:block">
         <NavItems></NavItems>
       </div>
       <Drawer isOpen={isDrawerOpen} onClose={toggleDrawer} />
