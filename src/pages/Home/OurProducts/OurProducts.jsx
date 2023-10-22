@@ -9,7 +9,7 @@ const OurProducts = () => {
     const [products] = useProducts();
 
     return (
-        <section className='flex flex-col justify-center items-center bg-[#274C5B] dark:bg-sky-950 my-40 pt-16 pb-28'>
+        <section className='flex flex-col justify-center items-center bg-[#274C5B] dark:bg-sky-950 my-12 lg:my-40 pt-16 pb-28'>
             <div className='mx-4 lg:mx-0'>
                 <div className='flex justify-between items-center gap-4 my-12'>
                     <h2 className='text-heading-2'>We Offer Fresh Ilish for you</h2>
