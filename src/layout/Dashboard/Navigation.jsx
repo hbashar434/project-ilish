@@ -11,12 +11,8 @@ const variants = {
   },
 };
 
-const usersItems = ["Profile", "Reviews", "PersonalMeet", "Reports"];
-const adminItems = [
-  "Profile", "Reviews", "PersonalMeet", "Reports",
-  "UserManagement",
-  "MeetingData"
-];
+const usersItems = ["Profile", "Reviews"];
+const adminItems = ["Profile", "Reviews"];
 
 export const Navigation = ({ isAdmin }) => (
   <motion.ul

@@ -3,7 +3,7 @@ import Main from "../layout/Main";
 import Error from "../pages/Error/Error";
 import Home from "../pages/Home/Home/Home";
 import Blog from "../pages/Blog/Blog";
-import Dashboard from "../layout/Dashboard";
+import Dashboard from "../layout/Dashboard/Dashboard";
 
 const router = createBrowserRouter([
   {

@@ -1,4 +1,4 @@
-import "./Dashboard.module.css";
+import "./Dashboard.css";
 import { useRef } from "react";
 import React, { useState } from "react";
 import { motion, useCycle } from "framer-motion";
