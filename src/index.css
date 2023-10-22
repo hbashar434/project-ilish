@@ -2,11 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-.my-text-gr {
+.my-text-primary {
+  @apply text-white dark:text-[#F3FDE8] font-my-sans;
+}
+
+.my-text-secondary {
+  @apply text-[#187776] dark:text-gray-300 font-my-serif;
+}
+
+.my-text-gradient {
   @apply text-2xl lg:text-4xl rounded-lg font-bold bg-gradient-to-r from-indigo-500 via-emerald-500 to-green-500 text-transparent bg-clip-text;
 }
 
-.my-bg-gr {
+.my-bg-primary {
+  @apply bg-[#005B41] dark:bg-gray-700;
+}
+
+.my-bg-secondary {
+  @apply bg-[#055e23] dark:bg-slate-700;
+}
+
+.my-bg-tertiary {
+  @apply bg-white dark:bg-slate-600;
+}
+
+.my-bg-gradient {
   @apply bg-gradient-to-r from-emerald-500 via-green-600 to-indigo-600;
 }
 
@@ -19,6 +39,6 @@
 
 @layer base {
   body {
-    @apply bg-[#e8f4f2] /*dark:bg-[#1a2027]*/;
+    @apply bg-[#e8f4f2] dark:bg-[#1a2027];
   }
 }

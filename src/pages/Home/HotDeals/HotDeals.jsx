@@ -1,36 +1,115 @@
+import "swiper/css";
+import "./HotDeals.css";
 import React from "react";
-// import "@splidejs/react-splide/css";
-// import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-import bannerImage1 from "../../../../public/images/fish.jpg";
-import Splide from "@splidejs/splide";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 
 const HotDeals = () => {
-  const options = {
-    type: "loop",
-    gap: "1rem",
-    autoplay: true,
-    pauseOnHover: false,
-    resetProgress: true,
-  };
+  const fishLists = [
+    {
+      baseId: "6533b468d1308fa419a0ecc6",
+      product_name: "Ilish 800g",
+      price: 1000,
+      rating: 4.5,
+      image: "https://i.ibb.co/zxc6FMz/chorizo.jpg",
+    },
+    {
+      baseId: "6533b468d1308fa419a0ecc7",
+      product_name: "Ilish 1000g",
+      price: 1250,
+      rating: 5,
+      image: "https://i.ibb.co/zxc6FMz/chorizo.jpg",
+    },
+    {
+      baseId: "6533b468d1308fa419a0ecc8",
+      product_name: "Ilish 1200g",
+      price: 1500,
+      rating: 4.8,
+      image: "https://i.ibb.co/zxc6FMz/chorizo.jpg",
+    },
+    {
+      baseId: "6533b468d1308fa419a0ecc9",
+      product_name: "Ilish 1500g",
+      price: 2000,
+      rating: 5,
+      image: "https://i.ibb.co/zxc6FMz/chorizo.jpg",
+    },
+    {
+      baseId: "6533b468d1308fa419a0ecd1",
+      product_name: "Ilish 1500g",
+      price: 2000,
+      rating: 5,
+      image: "https://i.ibb.co/zxc6FMz/chorizo.jpg",
+    },
+    {
+      baseId: "6533b468d1308fa419a0ecd2",
+      product_name: "Ilish 1500g",
+      price: 2000,
+      rating: 5,
+      image: "https://i.ibb.co/zxc6FMz/chorizo.jpg",
+    },
+  ];
 
   return (
-    <section>
-      <Splide
-        hasTrack={false}
-        options={options}
-        aria-label="My Favorite Images"
-        className="splide container mx-auto grid justify-center items-center"
-      >
-        <SplideTrack>
-          <SplideSlide>
-            <img src={bannerImage1} alt="bannerImage1" />
-          </SplideSlide>
-        </SplideTrack>
-        <div className="splide__arrows">
-          <button className="splide__arrow splide__arrow--prev">Prev</button>
-          <button className="splide__arrow splide__arrow--next">Next</button>
+    <section className="text-gray-600 body-font">
+      <div className="container px-5 py-24 mx-auto">
+        <div className="flex flex-wrap -m-4">
+          <div>
+            <h1 className="my-text-primary text-6xl font-bold">Hot Deals!</h1>
+            <p>Remains until the end of the offer</p>
+          </div>
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={10}
+            // pagination={{
+            //   clickable: false,
+            // }}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+              },
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            {fishLists.map((fishList) => (
+              <div key={fishList.id} className="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <SwiperSlide>
+                  <div className="border-spacing-3">
+                    <a className="block relative h-48 rounded overflow-hidden">
+                      <img
+                        alt="e-commerce"
+                        className="object-cover object-center w-full h-full block"
+                        src={fishList.image}
+                      />
+                    </a>
+                    <div className="mt-4">
+                      <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
+                        {fishList.product_name}
+                      </h3>
+                      <h2 className="text-gray-900 title-font text-lg font-medium">
+                        {fishList.product_name}
+                      </h2>
+                      <span className="mt-1">${fishList.price}</span>
+                      <span className="mt-1 ml-2 line-through">${fishList.price}</span>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </div>
+            ))}
+          </Swiper>
         </div>
-      </Splide>
+      </div>
     </section>
   );
 };
