@@ -8,7 +8,7 @@ const navList = [
   },
   {
     label: "Products",
-    to: "/",
+    to: "/products",
   },
   {
     label: "Contact",

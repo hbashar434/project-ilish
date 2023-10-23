@@ -6,6 +6,7 @@ import bannerImage2 from "../../../../assets/BannerImages/Slider/Fishing.jpg"
 import bannerImage3 from "../../../../assets/BannerImages/Slider/HilsaFish2.jpg"
 import bannerImage4 from "../../../../assets/BannerImages/Slider/Fish.jpg"
 import bannerImage5 from "../../../../assets/BannerImages/Slider/Fisherman.jpg"
+
 import "./BannerSlider.css"
 
 const BannerSlider = () => {
@@ -20,13 +21,19 @@ const BannerSlider = () => {
         resetProgress: true,
         // lazyLoad: 'nearby',
         rewind: true,
-
-
     };
 
     // new Splide('.splide').mount();
 
     return (
+
+
+
+
+
+ <div>
+
+
         <section>
             <Splide hasTrack={false}
                 options={options}
@@ -122,6 +129,16 @@ const BannerSlider = () => {
             </Splide>
 
         </section>
+
+        </div>
+ 
+
+
+
+
+
+
+
     );
 };
 

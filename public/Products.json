@@ -1,0 +1,30 @@
+[
+    {
+        "baseId": "6533b468d1308fa419a0ecc6",
+        "product_name": "Ilish 800g",
+        "price": 1000,
+        "rating": 4.5,
+        "image": "https://i.ibb.co/zxc6FMz/chorizo.jpg"
+    },
+    {
+        "baseId": "6533b468d1308fa419a0ecc7",
+        "product_name": "Ilish 1000g",
+        "price": 1250,
+        "rating": 5,
+        "image": "https://i.ibb.co/zxc6FMz/chorizo.jpg"
+    },
+    {
+        "baseId": "6533b468d1308fa419a0ecc8",
+        "product_name": "Ilish 1200g",
+        "price": 1500,
+        "rating": 4.8,
+        "image": "https://i.ibb.co/zxc6FMz/chorizo.jpg"
+    },
+    {
+        "baseId": "6533b468d1308fa419a0ecc9",
+        "product_name": "Ilish 1500g",
+        "price": 2000,
+        "rating": 5,
+        "image": "https://i.ibb.co/zxc6FMz/chorizo.jpg"
+    }
+]
