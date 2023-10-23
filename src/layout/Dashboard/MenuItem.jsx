@@ -36,7 +36,7 @@ export const MenuItem = ({ item }) => {
       whileTap={{ scale: 0.95 }}
     >
       <Link
-        to={`/dashboard/${item}`}
+        to={`/dashboard/${item.toLowerCase()}`}
         className="icon-placeholder"
         style={style}
       >

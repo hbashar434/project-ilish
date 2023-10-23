@@ -4,6 +4,7 @@ import Error from "../pages/Error/Error";
 import Home from "../pages/Home/Home/Home";
 import Blog from "../pages/Blog/Blog";
 import Dashboard from "../layout/Dashboard/Dashboard";
+import Profile from "../layout/Profile/Profile";
 
 const router = createBrowserRouter([
   {
@@ -23,10 +24,13 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: (
-      <Dashboard />
-    ),
-    children:[],
+    element: <Dashboard />,
+    children: [
+      {
+        path: "/dashboard/profile",
+        element: <Profile />,
+      },
+    ],
   },
 ]);
 
