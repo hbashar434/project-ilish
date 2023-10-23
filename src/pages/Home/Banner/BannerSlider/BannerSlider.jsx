@@ -100,7 +100,7 @@ const BannerSlider = () => {
                                 className="text-center text-white p-4 space-y-2 md:space-y-4"
                                 style={{ width: "70%" }}
                             >
-                                <h2 className='headline-text'>Ilisher Bari: The Finest Hilsa Fish Experience Online</h2>
+                                <h2 className='headline-text'>Ilisher Bari: The Finest Hilsa Fish Online</h2>
                                 <p className='paragraph-text'>We serve fresh Ilish, straight from the river to your plate.</p>
                                 <button className='banner-button'>Shop Now</button>
                             </div>

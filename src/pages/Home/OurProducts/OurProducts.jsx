@@ -12,7 +12,7 @@ const OurProducts = () => {
         <section className='flex flex-col justify-center items-center bg-[#274C5B] dark:bg-sky-950 my-12 lg:my-40 pt-16 pb-28'>
             <div className='mx-4 lg:mx-16'>
                 <div className='flex justify-between items-center gap-4 my-12'>
-                    <h2 className='text-heading-2'>We Offer Fresh Ilish for you</h2>
+                    <h2 className='text-heading-2 text-white font-my-serif'>We Offer Fresh Ilish for you</h2>
                     <Link to="/products">
                         <button className='flex justify-center items-center primary-button text-slate-950 dark:text-sky-950'>
                             <span className='mr-2'>View All Products</span><FiArrowRight size="20px" />
