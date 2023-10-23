@@ -10,7 +10,7 @@ const OurProducts = () => {
 
     return (
         <section className='flex flex-col justify-center items-center bg-[#274C5B] dark:bg-sky-950 my-12 lg:my-40 pt-16 pb-28'>
-            <div className='mx-4 lg:mx-0'>
+            <div className='mx-4 lg:mx-16'>
                 <div className='flex justify-between items-center gap-4 my-12'>
                     <h2 className='text-heading-2'>We Offer Fresh Ilish for you</h2>
                     <Link to="/products">
@@ -19,7 +19,7 @@ const OurProducts = () => {
                         </button>
                     </Link>
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-2  xl:grid-cols-4 gap-5'>
+                <div className='grid justify-center items-center grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4'>
                     {
                         products.map(product => <ProductsCard
                             key={product.baseId}
