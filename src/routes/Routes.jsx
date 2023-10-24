@@ -3,8 +3,12 @@ import Main from "../layout/Main";
 import Error from "../pages/Error/Error";
 import Home from "../pages/Home/Home/Home";
 import Blog from "../pages/Blog/Blog";
+import Dashboard from "../layout/Dashboard/Dashboard";
+import Profile from "../layout/Profile/Profile";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
 import Products from "../pages/Products/Products";
+import Login from "../pages/Login/Login";
+import Registration from "../pages/Registration/Registration";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +32,24 @@ const router = createBrowserRouter([
         path: "/products/:id",
         element: <ProductDetails />,
         loader: ({ params }) => fetch(`http://localhost:5000/api/products/details/${params.id}`)
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/registration",
+        element: <Registration />,
+      },
+    ],
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
+    children: [
+      {
+        path: "/dashboard/profile",
+        element: <Profile />,
       },
     ],
   },

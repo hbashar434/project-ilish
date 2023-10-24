@@ -1,0 +1,40 @@
+.dashboard-body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #166534 0%, #22c55e 100%);
+}
+
+.background {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  position: absolute;
+  background: #ffffff;
+}
+
+.icon-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: 40px 0;
+  margin-right: 20px;
+}
+
+.refresh {
+  padding: 10px;
+  position: absolute;
+  background: #00000066;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
