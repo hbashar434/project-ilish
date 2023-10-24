@@ -1,62 +1,58 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
 
-const items = [
-  { id: 1, subtitle: "Subtitle 1", title: "Title 1" },
-  { id: 2, subtitle: "Subtitle 2", title: "Title 2" },
-  { id: 3, subtitle: "Subtitle 3", title: "Title 3" },
-  { id: 4, subtitle: "Subtitle 4", title: "Title 4" },
-];
-
-function Profile() {
-  const [selectedId, setSelectedId] = useState(null);
-
-  const itemStyles = {
-    width: '200px',
-    height: '150px',
-    border: '1px solid #ccc',
-    margin: '10px',
-    padding: '10px',
-    cursor: 'pointer',
-  };
-
+const Profile = () => {
   return (
-    <div>
-      {items.map(item => 
-        <motion.div
-          key={item.id}
-          layoutId={item.id}
-          style={itemStyles}
-          onClick={() => setSelectedId(item.id)}
-        >
-          <div className="flex items-center mb-3">
-            <div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-indigo-500 text-white flex-shrink-0">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-              </svg>
+    <section className="text-gray-600 dark:bg-gray-900 dark:text-gray-400 body-font">
+      <div className="container px-5 py-24 mx-auto">
+        <div className="text-center mb-20">
+          <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 dark:text-white mb-4">
+            Update your Bio.
+          </h1>
+          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
+            Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+            taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
+            pug.
+          </p>
+        </div>
+        <form className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+          <div className="p-3 sm:w-1/2 w-full">
+            <div className="h-full">
+              <input type="text" placeholder="Full Name" className="w-full bg-gray-100 dark:bg-gray-800 rounded flex p-6 h-full items-center" />
             </div>
-            <motion.h5>{item.subtitle}</motion.h5>
-            <motion.h2>{item.title}</motion.h2>
           </div>
-        </motion.div>
-      )}
-
-      <AnimatePresence>
-        {selectedId !== null && (
-          <motion.div
-            key={selectedId}
-            layoutId={selectedId}
-            exit={{ opacity: 0 }}
-            style={itemStyles}
-          >
-            <motion.h5>{items[selectedId - 1].subtitle}</motion.h5>
-            <motion.h2>{items[selectedId - 1].title}</motion.h2>
-            <motion.button onClick={() => setSelectedId(null)}>Back</motion.button>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
+          <div className="p-3 sm:w-1/2 w-full">
+            <div className="h-full">
+              <input type="text" placeholder="Email Address" className="w-full bg-gray-100 dark:bg-gray-800 rounded flex p-6 h-full items-center" />
+            </div>
+          </div>
+          <div className="p-3 sm:w-1/2 w-full">
+            <div className="h-full">
+              <input type="number" placeholder="Phone Number" className="w-full bg-gray-100 dark:bg-gray-800 rounded flex p-6 h-full items-center" />
+            </div>
+          </div>
+          <div className="p-3 sm:w-1/2 w-full">
+            <div className="h-full">
+              <input type="text" placeholder="Area" className="w-full bg-gray-100 dark:bg-gray-800 rounded flex p-6 h-full items-center" />
+            </div>
+          </div>
+          <div className="p-3 sm:w-1/2 w-full">
+            <div className="h-full">
+              <input type="text" placeholder="House, Flat" className="w-full bg-gray-100 dark:bg-gray-800 rounded flex p-6 h-full items-center" />
+            </div>
+          </div>
+          
+          <div className="p-3 sm:w-1/2 w-full">
+            <div className="h-full">
+              <input type="text" placeholder="Hello" className="w-full bg-gray-100 dark:bg-gray-800 rounded flex p-6 h-full items-center" />
+            </div>
+          </div>
+        </form>
+        <button className="flex mx-auto mt-10 w-1/2 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+          Click to Update
+        </button>
+      </div>
+    </section>
   );
-}
+};
 
 export default Profile;
