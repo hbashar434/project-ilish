@@ -16,7 +16,7 @@
 }
 
 .text-heading-2 {
-  @apply text-xl md:text-4xl lg:text-5xl text-white font-semibold;
+  @apply text-xl md:text-4xl lg:text-5xl font-semibold;
 }
 
 /* -----------------------------------background colors------------------------ */

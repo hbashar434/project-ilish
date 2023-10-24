@@ -1,19 +1,22 @@
 import React from 'react';
 import { TbCurrencyTaka } from 'react-icons/tb';
+import { Link } from 'react-router-dom';
 import StarRatings from 'react-star-ratings';
 
 const ProductsCard = ({ product }) => {
 
-    const { product_name, price, rating, image } = product;
+    const { product_name, price, rating, image, _id } = product;
 
     return (
         <section>
-            <a className="group relative block overflow-hidden rounded-md">
-                <img
-                    src={image}
-                    alt="Ilish Image"
-                    className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
-                />
+            <div className="group relative block overflow-hidden rounded-md">
+                <Link to={`/products/${_id}`}>
+                    <img
+                        src={image}
+                        alt="Ilish Image"
+                        className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
+                    />
+                </Link>
 
                 <div className="relative border border-gray-100 bg-white p-6">
                     <h3 className="mt-4 text-lg font-medium text-gray-900">{product_name}</h3>
@@ -38,7 +41,7 @@ const ProductsCard = ({ product }) => {
                         </button>
                     </form>
                 </div>
-            </a>
+            </div>
         </section>
     );
 };

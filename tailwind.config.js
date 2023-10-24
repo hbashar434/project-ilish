@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         "my-sans": ["Open Sans", "sans"],
-        "my-serif": ["Libre Baskerville", "serif"],
+        "my-serif": ["Didot", "serif"],
       },
     },
   },
