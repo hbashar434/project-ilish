@@ -5,12 +5,12 @@ import StarRatings from 'react-star-ratings';
 
 const ProductsCard = ({ product }) => {
 
-    const { product_name, price, rating, image, baseId } = product;
+    const { product_name, price, rating, image, _id } = product;
 
     return (
         <section>
             <div className="group relative block overflow-hidden rounded-md">
-                <Link to={`/productDetails/${baseId}`}>
+                <Link to={`/products/${_id}`}>
                     <img
                         src={image}
                         alt="Ilish Image"
