@@ -89,7 +89,7 @@ const HotDeals = () => {
                     <a className="block relative h-48 rounded overflow-hidden">
                       <img
                         alt="e-commerce"
-                        className="object-cover object-center w-full h-full block"
+                        className="object-cover object-center block"
                         src={fishList.image}
                       />
                     </a>
