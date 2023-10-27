@@ -6,8 +6,8 @@ import { MdCall } from 'react-icons/md';
 
 const BannerSidebar = () => {
     return (
-        <section className="py-4 lg:py-8 flex font-medium items-center justify-center">
-            <section className="w-10/12 relative mx-auto rounded-md shadow-lg">
+        <section className="py-4 lg:py-8 flex font-medium justify-center md:justify-end items-center">
+            <section className="w-10/12 relative rounded-md shadow-lg">
                 <img src={sidebarImage} className="rounded-md" alt="profile picture" />
                 <div className="bg-slate-900/50 rounded-md absolute inset-0 text-white flex flex-col items-center justify-center">
                     <h2 className='sidebar-headline-text mb-2'>Call or Message <br /> Now to Order</h2>
