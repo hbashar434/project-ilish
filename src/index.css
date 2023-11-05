@@ -28,12 +28,14 @@
   @apply bg-[#055e23] dark:bg-slate-700;
 }
 
+
+
 .my-bg-third {
   @apply bg-[#00BBFF] dark:bg-[#002533]
 }
 
 .my-bg-tertiary {
-  @apply bg-white dark:bg-slate-600;
+  @apply bg-emerald-700 dark:bg-gray-700;
 }
 
 .my-bg-gradient {

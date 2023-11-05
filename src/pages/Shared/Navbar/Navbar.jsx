@@ -4,7 +4,6 @@ import ThemeToggler from "../../../utilities/ThemeToggler/ThemeToggler";
 import SearchField from "../../../components/NavCollection/SearchField/SearchField";
 import NavItems from "../../../components/NavCollection/NavItems/NavItems";
 import {
-  FaShoppingCart,
   FaSignOutAlt,
   FaSignInAlt,
   FaBars,
@@ -22,10 +21,10 @@ const Navbar = () => {
 
   return (
     <nav className="my-bg-primary p-4 w-full fixed z-10">
-      <div className="max-w-[1440] mx-auto flex items-center justify-between">
+      <div className="max-w-[1440] max-h-[70px] md:max-h-[120px] mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-4">
           <button
-            onClick={toggleDrawer}
+            onClick={() => toggleDrawer()}
             className=" md:hidden text-white cursor-pointer"
           >
             <FaBars className="text-xl" />
@@ -41,9 +40,6 @@ const Navbar = () => {
           <SearchField />
         </div>
         <div className="flex items-center space-x-2 md:space-x-4">
-          <Link to="/" className="my-text-primary">
-            <FaShoppingCart className="text-xl" />
-          </Link>
           {userLoggedIn ? (
             <button
               onClick={() => setUserLoggedIn(false)}

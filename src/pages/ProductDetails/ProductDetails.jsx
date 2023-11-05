@@ -1,10 +1,21 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
-const ProductDetails = () => {
+import { useParams } from "react-router-dom";
+import { useGetProductByIdQuery } from "../../redux/features/cart/cartApi";
+import Loading from "../Shared/Loading/Loading";
+import Error from "../Error/Error";
 
-  const productData = useLoaderData();
-  console.log(productData);
-  const { product_name, price, rating, image } = productData;
+const ProductDetails = () => {
+  const { id } = useParams();
+  const { data: product, isLoading, isError } = useGetProductByIdQuery(id);
+
+  if (isLoading) {
+    return <Loading />;
+  }
+  if (!isLoading && isError) {
+    return <Error />;
+  }
+
+  const { image, product_name, rating, price } = product || {};
 
   return (
     <section className="text-gray-600 dark:text-gray-300 body-font overflow-hidden">

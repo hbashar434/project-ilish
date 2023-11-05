@@ -13,7 +13,7 @@ const Drawer = ({ isOpen, onClose }) => {
       <div className="flex justify-end p-4">
         <button
           onClick={onClose}
-          className="text-gray-700 dark:text-gray-300 p-1 my-bg-tertiary rounded-full shadow-md shadow-slate-900"
+          className="text-gray-700 dark:text-gray-100 p-1 bg-gray-100 dark:bg-gray-500 rounded-full shadow-md shadow-slate-900"
         >
           <LiaTimesCircleSolid size={24} />
         </button>
