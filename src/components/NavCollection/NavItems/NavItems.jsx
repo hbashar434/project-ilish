@@ -12,15 +12,15 @@ const navList = [
   },
   {
     label: "Contact",
-    to: "/",
+    to: "/contact",
   },
   {
     label: "About",
-    to: "/",
+    to: "/about",
   },
   {
-    label: "Blog",
-    to: "/",
+    label: "Blogs",
+    to: "/blogs",
   },
 ];
 
