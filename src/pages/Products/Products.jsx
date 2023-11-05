@@ -1,12 +1,10 @@
 import React from "react";
 import ProductsCard from "../Home/OurProducts/ProductsCard/ProductsCard";
-import useProducts from "../../hooks/useProducts";
 import { useGetProductsQuery } from "../../redux/features/cart/cartApi";
 import Loading from "../Shared/Loading/Loading";
 import Error from "../Error/Error";
 
 const Products = () => {
-  //   const [products] = useProducts();
   const { data: products, isLoading, isError } = useGetProductsQuery();
 
   if (isLoading) {

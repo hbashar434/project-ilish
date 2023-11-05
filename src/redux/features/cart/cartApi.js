@@ -2,13 +2,13 @@ import baseApi from "../api/baseApi";
 
 const cartApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
-    getProducts: builder.query({
-      query: () => "/api/products",
+    getAllProducts: builder.query({
+      query: () => "/products",
     }),
-    getProductsById: builder.query({
-      query: (id) => `/api/products${id}`,
+    getProductById: builder.query({
+      query: (id) => `/products${id}`,
     }),
   }),
 });
 
-export const { useGetProductsQuery, useGetProductsByIdQuery } = cartApi;
+export const { useGetAllProductsQuery, useGetProductByIdQuery } = cartApi;
