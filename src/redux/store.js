@@ -3,7 +3,7 @@ import cartSlice from "./features/cart/cartSlice";
 import baseApi from "./features/api/baseApi";
 export const store = configureStore({
   reducer: {
-    carts: cartSlice,
+    cart: cartSlice,
     [baseApi.reducerPath]: baseApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>

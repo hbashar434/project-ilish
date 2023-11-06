@@ -10,8 +10,8 @@ const ProductsCard = ({ product }) => {
 
   const dispatch = useDispatch();
 
-  const handleAddToCart = (id) => {
-    dispatch(addToCart(id));
+  const handleAddToCart = (_id) => {
+    dispatch(addToCart(_id));
   };
   return (
     <section>
