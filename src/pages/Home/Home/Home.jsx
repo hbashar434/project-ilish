@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <Banner />
-      <HotDeals />
+      {/* <HotDeals /> */} {/* TODO: need to fix key error */}
       <Offers />
       <OurProducts />
       <ShopNow />
